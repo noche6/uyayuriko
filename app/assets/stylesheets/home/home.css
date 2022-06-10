@@ -1,0 +1,30 @@
+.main-field{
+  height: 100%;
+  width: 100%;
+  background-color: darkgray;
+}
+.main-images{
+  height: 500px;
+  width: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-around;
+
+}
+.main-images1{
+  height: 400px;
+  width: 400px;
+  background-color: aqua;
+  padding: 20px;
+}
+
+.category{
+  width: 400px;
+  height: 300px;
+}
+.category-name{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+
+}
