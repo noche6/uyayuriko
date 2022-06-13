@@ -1,4 +1,5 @@
 class BustupsController < ApplicationController
+  before_action :set_item, only: [:edit, :show, :update, :destroy]
   def index
     @bustups = Bustup.all
   end
@@ -17,15 +18,12 @@ class BustupsController < ApplicationController
   end
 
   def show
-    @bustup = Bustup.find(params[:id])
   end
 
   def edit
-    @bustup = Bustup.find(params[:id])
   end
 
   def update
-    @bustup = Bustup.find(params[:id])
     if @bustup.update(bustup_params)
       redirect_to bustup_path(@bustup.id)
     else
@@ -34,7 +32,6 @@ class BustupsController < ApplicationController
   end
 
   def destroy
-    @bustup = Bustup.find(params[:id])
     @bustup.destroy
     redirect_to bustups_path
   end
@@ -42,5 +39,9 @@ class BustupsController < ApplicationController
   private
   def bustup_params
     params.require(:bustup).permit(:title,:image)
+  end
+
+  def set_item
+    @bustup = Bustup.find(params[:id])
   end
 end
