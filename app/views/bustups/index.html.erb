@@ -1,0 +1,10 @@
+カテゴリーbustup
+<%= link_to '新規投稿', new_bustup_path, method: :get %>
+
+<% @bustups.each do | bustup |%>
+  <%= link_to bustup_path(bustup.id), method: :get do %>
+   <%= image_tag(bustup.image, class: 'bustupimage')%>
+   <%=bustup.title%>
+  <%end%>
+
+<%end%>

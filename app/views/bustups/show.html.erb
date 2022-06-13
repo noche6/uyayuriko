@@ -1,0 +1,4 @@
+<%= image_tag(@bustup.image, class: 'bustupimage')%>
+<%=@bustup.title%>
+<%= link_to '編集', edit_bustup_path(@bustup.id), method: :get %>
+<%= link_to '削除', bustup_path(@bustup.id), method: :delete %>
