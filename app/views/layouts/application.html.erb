@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Uyayuriko</title>
+    <div>
+      <title>Uyayuriko</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -13,6 +14,16 @@
   <header class="header">
       <div class="header__bar row">
         <h1 class="grid"><a href="/">Uyayuriko</a></h1>
+        <div class='signup'>
+          <ul class='lists-right'>
+            <% if user_signed_in? %>
+              <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li> 
+            <% else %>
+              <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+              <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+            <% end %>
+          </ul>
+
         <div class="user_nav grid-6">
          
         </div>

@@ -4,24 +4,23 @@
       <h3>新規投稿</h3>
     </div>
     <div class='up-road'>
-      <%= link_to image_tag('icons8-アップロード.gif'), new_bustup_path, method: :get %>
+      <%= link_to image_tag('icons8-アップロード.gif'), new_chibi_path, method: :get %>
     </div>
   </div>
   <div class='index-images'>
-    <% @bustups.each do | bustup |%>
-      <%= link_to bustup_path(bustup.id), method: :get do %>
+    <% @chibis.each do | chibi |%>
+      <%= link_to chibi_path(chibi.id), method: :get do %>
       <div>
-       <%= image_tag(bustup.image, class: 'index-image')%>
+       <%= image_tag(chibi.image, class: 'index-image')%>
       </div>
       <div class='index-title'>
-       <%=bustup.title%>
+       <%=chibi.title%>
       </div>
       <%end%>
     <%end%>
-    <% if @bustups[0]==nil%>
+    <% if @chibis[0]==nil%>
       <%= image_tag('development.jpg', class: 'index-image')%>
     <%end%>
-
   </div>
 </div>
 <div class='icon-rinks'>

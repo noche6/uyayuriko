@@ -1,12 +1,12 @@
 <div class='n-e-field'>
   <div class='n-e-title'>
-    新規投稿
+    編集
   </div>
   <div class="contents ">
     <div class="container">
-      <%= form_with(model: @bustup, local: true) do |form| %>
+      <%= form_with(model: @chibi, local: true) do |form| %>
       <div class='item'>
-        <%= form.file_field :image, id:"all_image" %>
+        <%= form.file_field :image, id:"chibi_image" %>
       </div>
       <div class='item'>
         <%= form.text_field :title, placeholder: "タイトル" %>
@@ -15,7 +15,7 @@
         <%= form.submit "送信" %>
       </div>
       <% end %>
-      <%= link_to '戻る', bustups_path, method: :get %>
+      <%= link_to '戻る', chibis_path, method: :get %>
     </div>
   </div>
 </div>

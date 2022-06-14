@@ -4,7 +4,7 @@
   </div>
   <div class="contents ">
     <div class="container">
-      <%= form_with(model: @bustup, local: true) do |form| %>
+      <%= form_with(model: @fullbody, local: true) do |form| %>
       <div class='item'>
         <%= form.file_field :image, id:"all_image" %>
       </div>
@@ -15,7 +15,7 @@
         <%= form.submit "送信" %>
       </div>
       <% end %>
-      <%= link_to '戻る', bustups_path, method: :get %>
+      <%= link_to '戻る', fullbodies_path, method: :get %>
     </div>
   </div>
 </div>

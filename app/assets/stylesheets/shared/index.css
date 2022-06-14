@@ -2,6 +2,8 @@
   height: 100%;
   width: 100%;
   background-color: antiquewhite;
+  display: flex;
+  
 }
 .new-up-road{
   padding: 20px;
@@ -10,7 +12,7 @@
   height: 50px;
   width: 70px;
 }
-.bustup-images{
+.index-images{
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -18,13 +20,14 @@
   flex-wrap: wrap;
 
 }
-.bustupimage{
+.index-image{
+  object-fit: cover;
   margin: 20px;
   height: 200px;
   width: 200px;
   box-shadow: 0px 0px 20px 10px rgb(243, 255, 115);
 }
-.bustup-title {
+.index-title {
   font-size: 50px;
   color: #000;
   text-align: center;
