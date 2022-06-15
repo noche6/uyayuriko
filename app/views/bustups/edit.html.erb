@@ -1,0 +1,21 @@
+<div class='n-e-field'>
+  <div class='n-e-title'>
+    編集
+  </div>
+  <div class="contents ">
+    <div class="container">
+      <%= form_with(model: @bustup, local: true) do |form| %>
+      <div class='item'>
+        <%= form.file_field :image, id:"bustup_image" %>
+      </div>
+      <div class='item'>
+        <%= form.text_field :title, placeholder: "タイトル" %>
+      </div>
+      <div class='item'>
+        <%= form.submit "送信" %>
+      </div>
+      <% end %>
+      <%= link_to '戻る', bustups_path, method: :get %>
+    </div>
+  </div>
+</div>

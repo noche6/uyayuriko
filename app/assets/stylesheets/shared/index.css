@@ -1,0 +1,40 @@
+.bu-index{
+  height: 100%;
+  width: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  
+}
+.new-up-road{
+  padding: 20px;
+}
+.up-road img{
+  height: 50px;
+  width: 70px;
+}
+.index-images{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  flex-wrap: wrap;
+
+}
+.index-image{
+  object-fit: cover;
+  margin: 20px;
+  height: 200px;
+  width: 200px;
+  box-shadow: 0px 0px 20px 10px rgb(243, 255, 115);
+}
+.index-title {
+  font-size: 50px;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  text-decoration: none;
+
+}
+
+

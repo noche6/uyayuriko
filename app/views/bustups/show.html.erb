@@ -1,0 +1,32 @@
+<div class='show-field' >
+  <div class='show-title'> 
+    <%=@bustup.title%>
+  </div>
+  <div class='show-items'>
+    <%= image_tag(@bustup.image, class: 'show-image')%>
+  </div>
+  <div class='btn'>
+  <% if user_signed_in? %>
+    <div class='edit'>
+      <%= link_to image_tag('icons8-編集.gif'), edit_bustup_path(@bustup.id), method: :get %>
+    </div>
+    <div class='destory'>
+      <%= link_to image_tag('icons8-削除.gif'), bustup_path(@bustup.id), method: :delete %>
+    </div>
+  <% end %>
+    <div class='back'>
+      <%= link_to image_tag('icons8-uターン.gif'), bustups_path, method: :get %>
+    </div>
+  </div>
+</div>
+<div class='icon-rinks'>
+  <div class='icon-rink'>
+    <a target="_blank" href="https://icons8.com/icon/1RHO78Nco12i/編集">編集</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+  </div>
+  <div class='icon-rink'>
+    <a target="_blank" href="https://icons8.com/icon/aJXCfqpXgZUC/削除">削除</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+  </div>
+  <div class='icon-rink'>
+    <a target="_blank" href="https://icons8.com/icon/OSSYyxbtK8gQ/uターン">Uターン</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+  </div>
+</div>

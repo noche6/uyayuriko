@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Uyayuriko</title>
+    <div>
+      <title>Uyayuriko</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+  <header class="header">
+      <div class="header">
+        <h1 class="grid"><a href="/">Uyayuriko</a></h1>
+        <div class='signup'>
+          <ul class='lists-right'>
+            <% if user_signed_in? %>
+              <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %>
+            <% else %>
+            <div>
+              <%= link_to 'ログイン', new_user_session_path, class: "login" %><br>
+            </div>
+            <div>
+              <%= link_to '新規登録', new_user_registration_path, class: "sign-up" %>
+            </div>
+            <% end %>
+          </ul>
+
+        <div class="user_nav grid-6">
+         
+        </div>
+      </div>
+    </header>
     <%= yield %>
+    <footer>
+     <div class = footer-field>
+      <div class = rink>
+       <%= link_to image_tag('ツイッターアイコン.jpeg', class:"icon"), "https://twitter.com/YURiKO830" %>
+       <%= link_to image_tag('Instagram_Glyph_Gradient_RGB.png', class:"icon"), "https://www.instagram.com/yuriko__83/" %>
+       <%= link_to image_tag('YouTube_23392.png', class:"icon"), "https://www.youtube.com/channel/UC0nWgr7qxT0RtS69Fidb7Kw/featured" %>
+       <%= link_to image_tag('tiktok_logo_icon_188431.png', class:"icon"), "https://www.tiktok.com/@yurikooooo830" %>
+      </div>
+     </div>
+    </footer>
   </body>
 </html>

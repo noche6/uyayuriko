@@ -1,0 +1,30 @@
+.n-e-field{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(155, 252, 255);
+}
+.n-e-title{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  font-size: 100px;
+  font-weight: 600;
+}
+.contents{
+  margin: auto;
+  height: 600px;
+  width: 600px;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item{
+  padding-bottom: 20px;
+}
+
+.preview-image{
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+}

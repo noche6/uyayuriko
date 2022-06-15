@@ -1,0 +1,30 @@
+<div class='bu-index'>
+  <div class='new-up-road'>
+    <div class='new-up'>
+      <h3>新規投稿</h3>
+    </div>
+    <div class='up-road'>
+      <%= link_to image_tag('icons8-アップロード.gif'), new_halfbody_path, method: :get %>
+    </div>
+  </div>
+  <div class='index-images'>
+    <% @halfbodies.each do | halfbody |%>
+      <%= link_to halfbody_path(halfbody.id), method: :get do %>
+      <div>
+       <%= image_tag(halfbody.image, class: 'index-image')%>
+      </div>
+      <div class='index-title'>
+       <%=halfbody.title%>
+      </div>
+      <%end%>
+    <%end%>
+    <% if @halfbodies[0]==nil%>
+      <%= image_tag('development.jpg', class: 'index-image')%>
+    <%end%>
+  </div>
+</div>
+<div class='icon-rinks'>
+  <div class='icon-rink'>
+    <a target="_blank" href="https://icons8.com/icon/qBWvwdEFQ7kE/アップロード">アップロード</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+  </div>
+</div>

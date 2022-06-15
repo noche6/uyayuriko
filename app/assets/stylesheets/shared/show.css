@@ -1,0 +1,61 @@
+.show-field{
+  height: 100%;
+  width: 100%;
+  background-color: antiquewhite;
+}
+.show-items{
+  display: flex;
+  justify-content: center;
+  padding-top:  100px;
+}
+
+.btn{
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+
+}
+.show-title {
+  display: flex;
+  font-size: 150px;
+  font-weight: 700;
+  justify-content: center;
+}
+.show-image {
+  height: 750px;
+  width: 600px;
+  object-fit: cover;
+}
+.edit {
+  margin: 20px;
+  height: 200px;
+  width: 200px;
+  border: solid 5px;
+  box-shadow: 0px 0px 20px 10px rgb(212, 144, 49);
+}
+.destory {
+  margin: 20px;
+  height: 200px;
+  width: 200px;
+  border: solid 5px;
+  box-shadow: 0px 0px 20px 10px rgb(212, 60, 49);
+}
+.back {
+  margin: 20px;
+  height: 200px;
+  width: 200px;
+  border: solid 5px;
+  box-shadow: 0px 0px 20px 10px rgb(49, 125, 212);
+}
+
+.icon-rinks{
+  background-color: rgb(243, 248, 164);
+  justify-content: flex-end;
+  display: flex;
+}
+
+.icon-rink a{
+  padding-right: 10px;
+  text-decoration: none;
+  color: black;
+}
