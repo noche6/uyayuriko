@@ -14,13 +14,7 @@
 
 }
 .main-images1{
-  height: 300px;
-  width: 400px;
-  box-shadow: 0px 0px 20px 10px rgb(224, 225, 218);
-
-}
-.main-images2{
-  height: 300px;
+  height: 500px;
   width: 400px;
   box-shadow: 0px 0px 20px 10px rgb(224, 225, 218);
 
@@ -29,7 +23,8 @@
 
 .category{
   width: 400px;
-  height: 300px;
+  height: 500px;
+  object-fit: cover;
 }
 .category-name{
   text-align: center;
