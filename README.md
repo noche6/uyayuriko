@@ -1,24 +1,35 @@
-# README
+# アプリケーション名
+uyayuriko
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリケーション概要
+サンプル画像を投稿して閲覧するサンプル画像を投稿して閲覧することができる。
 
-Things you may want to cover:
+# URL
+https://uyayuriko.herokuapp.com/
 
-* Ruby version
+#　テスト用アカウント
+・メールアドレス: chanebu@gmail.com
+・パスワード: 351701
 
-* System dependencies
+# 利用方法
 
-* Configuration
+## 画像投稿
+1.新規投稿またはログインをする。
+2.投稿したいカテゴリーのページに遷移する。
+3.新規投稿ボタンを押し投稿ページから画像ファイルを選択、タイトルと入力して送信ボタンを押す。
 
-* Database creation
+## 画像詳細
+ペンのボタンで編集、バツのボタンで削除、Uターンボタンでカテゴリーのトップページに遷移する。
+編集と削除はログイン者のみ表示され機能を使用する事ができる。
 
-* Database initialization
+# アプリを作成した背景
+友人がイラストレーターで個人サイトを持っておらず、公開できるサンプル画像が少なかった。
+個人サイトを作ることでより多くのサンプル画像を見てもらうためアプリケーションを開発する事にした。
 
-* How to run the test suite
+# 洗い出した要件
+要件を定義したシート(https://docs.google.com/spreadsheets/d/1ZvArNnMtwndaV9M9h5I5s-O285lYqsS9DxhhcYzFlBc/edit#gid=982722306)
 
-* Services (job queues, cache servers, search engines, etc.)
+# 実装予定の機能
+今後は相手の要望により追加実装予定。
 
-* Deployment instructions
 
-* ...
