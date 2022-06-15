@@ -8,14 +8,14 @@
   <div class='btn'>
   <% if user_signed_in? %>
     <div class='edit'>
-      <%= link_to image_tag('icons8-編集.gif'), edit_bustup_path(@bustup.id), method: :get %>
+      <%= link_to image_tag('icons8-編集.gif',class:'icon'), edit_bustup_path(@bustup.id), method: :get %>
     </div>
     <div class='destory'>
-      <%= link_to image_tag('icons8-削除.gif'), bustup_path(@bustup.id), method: :delete %>
+      <%= link_to image_tag('icons8-削除.gif',class:'icon'), bustup_path(@bustup.id), method: :delete %>
     </div>
   <% end %>
     <div class='back'>
-      <%= link_to image_tag('icons8-uターン.gif'), bustups_path, method: :get %>
+      <%= link_to image_tag('icons8-uターン.gif',class:'icon'), bustups_path, method: :get %>
     </div>
   </div>
 </div>
