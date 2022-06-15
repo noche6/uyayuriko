@@ -6,13 +6,14 @@
     <%= image_tag(@halfbody.image, class: 'show-image')%>
   </div>
   <div class='btn'>
+  <% if user_signed_in? %>
     <div class='edit'>
-      
       <%= link_to image_tag('icons8-編集.gif'), edit_halfbody_path(@halfbody.id), method: :get %>
     </div>
     <div class='destory'>
       <%= link_to image_tag('icons8-削除.gif'), halfbody_path(@halfbody.id), method: :delete %>
     </div>
+  <% end %>
     <div class='back'>
       <%= link_to image_tag('icons8-uターン.gif'), halfbody_path, method: :get %>
     </div>

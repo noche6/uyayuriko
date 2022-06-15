@@ -24,3 +24,44 @@ ul,li {
   text-decoration: none;
   color: black;
 }
+
+.header{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.logout {
+  text-decoration: none;
+  color: coral;
+  padding-right: 30px;
+  font-size: large;
+  font-weight: 600;
+  width: 20px;
+  height: 50px;
+  background-color: aliceblue;
+}
+
+.login{
+  text-decoration: none;
+  color: coral;
+  margin-right: 30px;
+  font-size: large;
+  font-weight: 600;
+  background-color: aliceblue;
+  border: solid 3px #333;
+  border-radius: 10px;
+
+}
+
+.sign-up{
+  text-decoration: none;
+  color: coral;
+  margin-right: 30px;
+  font-size: large;
+  font-weight: 600;
+  background-color: aliceblue;
+  border: solid 3px #333;
+  border-radius: 10px;
+
+}

@@ -12,15 +12,19 @@
 
   <body>
   <header class="header">
-      <div class="header__bar row">
+      <div class="header">
         <h1 class="grid"><a href="/">Uyayuriko</a></h1>
         <div class='signup'>
           <ul class='lists-right'>
             <% if user_signed_in? %>
-              <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li> 
+              <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %>
             <% else %>
-              <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
-              <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+            <div>
+              <%= link_to 'ログイン', new_user_session_path, class: "login" %><br>
+            </div>
+            <div>
+              <%= link_to '新規登録', new_user_registration_path, class: "sign-up" %>
+            </div>
             <% end %>
           </ul>
 
