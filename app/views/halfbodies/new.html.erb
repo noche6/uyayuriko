@@ -6,6 +6,7 @@
     <div class="container">
       <%= form_with(model: @halfbody, local: true) do |form| %>
       <div class='item'>
+      <div id="previews"></div>
         <%= form.file_field :image, id:"all_image" %>
       </div>
       <div class='item'>

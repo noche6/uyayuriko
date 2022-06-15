@@ -34,12 +34,13 @@ ul,li {
 .logout {
   text-decoration: none;
   color: coral;
-  padding-right: 30px;
+  margin-right: 30px;
   font-size: large;
   font-weight: 600;
-  width: 20px;
-  height: 50px;
   background-color: aliceblue;
+  border: solid 3px #333;
+  border-radius: 10px;
+
 }
 
 .login{
