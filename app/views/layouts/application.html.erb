@@ -11,9 +11,9 @@
   </head>
 
   <body>
-  <header class="header">
+  <header class="head">
       <div class="header">
-        <h1 class="grid"><a href="/">Uyayuriko</a></h1>
+        <%= link_to image_tag('ウヤユリコヘッダー.jpg', class:'headimg'), '/'%>
         <div class='signup'>
           <ul class='lists-right'>
             <% if user_signed_in? %>

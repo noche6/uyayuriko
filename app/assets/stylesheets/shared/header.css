@@ -14,10 +14,12 @@ ul,li {
   margin: 0;
 }
 
-.header{
-  background-color: grey;
-  height: 100%;
-  width: 100%;
+.headimg {
+  background-color: rgb(255, 255, 255);
+  height: 250px;
+  width: 1000px;
+  object-fit: cover;
+
 }
 
 .grid a{
@@ -29,6 +31,10 @@ ul,li {
   display: flex;
   justify-content:space-between;
   align-items: center;
+}
+
+.signup{
+  justify-content: space-around;
 }
 
 .logout {
